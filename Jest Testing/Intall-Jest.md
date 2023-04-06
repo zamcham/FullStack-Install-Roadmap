@@ -2,21 +2,34 @@ Here are the steps to install Jest and the Jest local storage mock:
 
 ---
 
-1. **Install Jest**: as a dev dependency by running the following command in your project directory:
+1. **Initialize the project**: You can skip this if you already have a package.json file, else, you need a new npm project by running
 ```
-npm install --save-dev jest
+npm init
 ```
 
-2. Create a __tests__ folder in your project root directory.
-3. Inside the __tests__ folder, create a test file (e.g., mytest.test.js) that will contain your test code.
-4. In your test file, import the Jest local storage mock by adding the following code at the top of the file:
+2. **Start installation**: Install Jest and Babel dependencies by running:
 ```
-import 'jest-localstorage-mock';
+npm install --save-dev jest @babel/core @babel/preset-env babel-jest
 ```
-5. Now you can use the local storage mock in your test code. For example, you can set a value in local storage using the localStorage.setItem() method and then retrieve it using the localStorage.getItem() method:
+
+3. **Add Babel Configuration**: Create a new file named '.babelrc' in the root directory of your project and add the following configuration to it
 ```
-test('testing local storage', () => {
-  localStorage.setItem('myKey', 'myValue');
-  expect(localStorage.getItem('myKey')).toBe('myValue');
-});
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ]
+}
 ```
+
+4. **Update the scripts on your JSON**: Add the following scripts to your package.json file:
+```
+"scripts": {
+  "test": "jest"
+}
+```
+
+That's it! You should now have Jest and Babel properly installed and configured to run tests for your functions.
