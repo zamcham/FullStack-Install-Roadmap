@@ -32,4 +32,4 @@ npm install --save-dev jest @babel/core @babel/preset-env babel-jest
 }
 ```
 
-That's it! You should now have Jest and Babel properly installed and configured to run tests for your functions.
+🎉 That's it! You should now have Jest and Babel properly installed and configured to run tests for your functions.
