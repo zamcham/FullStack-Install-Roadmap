@@ -1,4 +1,4 @@
-Here are the steps to install Jest and the Jest local storage mock:
+##Install Jest and Babel and configure them to run tests for your functions
 
 ---
 
