@@ -37,7 +37,7 @@ test('setText function sets text of HTML element correctly', () => {
 ```
 
 3. Testing a function that makes an HTTP request:
-```
+```JavaScript
 // Function that retrieves data from a REST API
 async function fetchData() {
   const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
