@@ -3,7 +3,7 @@ Here are the steps to install Jest and the Jest local storage mock:
 ---
 
 1. **Initialize the project**: You can skip this if you already have a package.json file, else, you need a new npm project by running
-```JavaScript
+```
 npm init
 ```
 
@@ -26,7 +26,7 @@ npm install --save-dev jest @babel/core @babel/preset-env babel-jest
 ```
 
 4. **Update the scripts on your JSON**: Add the following scripts to your package.json file:
-```
+```JSON
 "scripts": {
   "test": "jest"
 }
