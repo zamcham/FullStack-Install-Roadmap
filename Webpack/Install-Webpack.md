@@ -27,4 +27,4 @@ This configuration sets the entry point for the application to `./src/index.js`,
 ```
 This script runs Webpack in production mode, which optimizes the output for production.
 
-6. **Test**: Test the Webpack configuration by running `npm run build`. This should generate a bundle.js file in the dist directory.
+6. **Test**: Test the Webpack configuration by running `npm run build`. This should generate a bundle.js file in the dist directory. If you see the dist folder then you have successfully installed webpack
