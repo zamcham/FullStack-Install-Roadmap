@@ -19,7 +19,7 @@ module.exports = {
 This configuration sets the entry point for the application to `./src/index.js`, and outputs the bundled code to `./dist/bundle.js`.
 
 4. **Create source and distribution directories**: Create a `src` directory to hold the application's source code, and a `dist` directory to hold the distribution code.
-5. **Create a script**: Inside the `package.json` file, add a script to run Webpack. Here's an example:
+5. **Create a script**: Inside the `package.json` file, inside the "scripts" configuration, add the following script to run Webpack:
 ```
 "scripts": {
   "build": "webpack --mode production"
