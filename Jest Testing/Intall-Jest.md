@@ -13,3 +13,10 @@ npm install --save-dev jest
 ```
 import 'jest-localstorage-mock';
 ```
+5. Now you can use the local storage mock in your test code. For example, you can set a value in local storage using the localStorage.setItem() method and then retrieve it using the localStorage.getItem() method:
+```
+test('testing local storage', () => {
+  localStorage.setItem('myKey', 'myValue');
+  expect(localStorage.getItem('myKey')).toBe('myValue');
+});
+```
