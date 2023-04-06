@@ -1,4 +1,4 @@
-##Install Jest and Babel and configure them to run tests for your functions##
+## Install Jest and Babel and configure them to run tests for your functions
 
 ---
 
