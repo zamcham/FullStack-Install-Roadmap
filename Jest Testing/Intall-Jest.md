@@ -13,7 +13,7 @@ npm install --save-dev jest @babel/core @babel/preset-env babel-jest
 ```
 
 3. **Add Babel Configuration**: Create a new file named '.babelrc' in the root directory of your project and add the following configuration to it
-```
+```JSON
 {
   "presets": [
     ["@babel/preset-env", {
