@@ -36,7 +36,7 @@ npm install --save-dev jsdom
 ```
 
 
-🎉 That's it! You should now have Jest and Babel properly installed and configured to run tests for your functions.
+🎉 That's it! You should now have Jest, JSDOM and Babel properly installed and configured to run tests for your functions.
 
 Note: Remember in your test file, import the jsdom package, create a new JSDOM instance and assign the window and document objects from the JSDOM instance to the global scope:
 
