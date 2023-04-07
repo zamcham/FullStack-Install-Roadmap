@@ -55,6 +55,7 @@ global.document = dom.window.document;
 
 And here's an example of how you could use node-localstorage in your Jest test file to simulate a localStorage environment:
 ```JavaScript
+// ...Other code and global functions
 const { LocalStorage } = require("node-localstorage");
 global.localStorage = new LocalStorage("./scratch");
 ```
