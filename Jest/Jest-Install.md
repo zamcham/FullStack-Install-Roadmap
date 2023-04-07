@@ -35,6 +35,10 @@ npm install --save-dev jest @babel/core @babel/preset-env babel-jest
 npm install --save-dev jsdom
 ```
 
+6. **Install node-localstorage**: 'node-localstorage' provides a localStorage implementation for Node.js, all you have to do is run the following command:
+```
+npm install --save-dev node-localstorage
+```
 
 🎉 That's it! You should now have Jest, JSDOM and Babel properly installed and configured to run tests for your functions.
 
@@ -47,4 +51,10 @@ const { JSDOM } = require('jsdom');
 const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
 global.window = dom.window;
 global.document = dom.window.document;
+```
+
+And here's an example of how you could use node-localstorage in your Jest test file to simulate a localStorage environment:
+```JavaScript
+const { LocalStorage } = require("node-localstorage");
+global.localStorage = new LocalStorage("./scratch");
 ```
